@@ -1,0 +1,15 @@
+# Project 1 Summary
+
+This project aims to perform query operations on NoSQL database and retrieve the results. A NoSQL database, which is an ordered list of JSON objects, was provided for this project. This database contains data about various businesses such as name, address, location, rating, business category, etc. This project consisted of two tasks. The first task involved identifying all businesses situated in a particular city. The second task required identifying specific types of businesses within a certain radius of given coordinates. These tasks were completed with the help of the UnQLite library for Python.  
+
+In order to complete the first task, a scan was initiated on the database over the city attribute, and all the data objects with matching city values were retrieved. In order to complete the second task, the distance from the given coordinates to all the businesses was calculated using the Haversine formula. If a business lies within the given radius, its category is compared with the desired category. Finally, a list of businesses that meet these criteria is retrieved.
+
+
+# Project 2 Summary
+
+This project aims to perform Hot Spot Analysis on spatio- temporal data. The provided data is a collection of NYC taxi trip records. This project consisted of Hot Zone Analysis and Hot Cell Analysis. The first part, Hot Zone Analysis, aims to identify the hotness of a given rectangular region. Given a set of taxi pick-up coordinates (points), the task is to count how many would lie within a set of regions (zones). The higher the number of points within a region, the greater will be its hotness. The second part, Hot Cell Analysis, aims to identify statistically significant spatial hot spots. Here, the task is to identify significant clusters in space-time cubes (cells) based on taxi pick-up times and locations using the Getis-Ord Gi<sup>*</sup> statistic. These tasks were completed using Apache Spark.  
+
+In order to complete the hot zone analysis, the points are spatially located, and the zones in which they lie are determined. Then, a range join operation is performed on the zone and point data to determine the number of points in each zone. The coordinates of the zones are saved in ascending order to a file. In order to complete the hot cell analysis, the number of points in each cell is determined using the spatio- temporal boundary of that cell. This is also performed by SQL join operation. Then, the number of neighbors for each cell is determined, and the Getis-Ord Gi<sup>*</sup> statistic is calculated. The spatial and temporal coordinates of the cells are saved to a file in descending order of the Getis-Ord Gi<sup>*</sup> measure.
+
+
+# I used these projects as part of my MSCS portfolio. The project report is available [here](CSE_511_Portfolio_Report.pdf).
