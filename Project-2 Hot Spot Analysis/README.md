@@ -1,0 +1,1 @@
+The project description can found in the [README](Instructions and Templates for Project 2/README.md) of `Instructions and Templates for Project 2` folder.
