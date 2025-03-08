@@ -1,1 +1,1 @@
-The project description can found in the [README](Instructions and Templates for Project 2/README.md) of `Instructions and Templates for Project 2` folder.
+The project description can found in the [README](./Instructions%20and%20Templates%20for%20Project%202/README.md) of `Instructions and Templates for Project 2` folder.
